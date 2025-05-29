@@ -124,7 +124,16 @@ TextureImporter:
     indices: 
     edges: []
     weights: []
+<<<<<<<< HEAD:Assets/TextMesh Pro/Examples & Extras/Textures/Small Crate_diffuse.jpg.meta
   spritePackingTag: 
+========
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Astroid_0: -876360174021668994
+  mipmapLimitGroupName: 
+>>>>>>>> origin/Kyra:Assets/Sprites and Images/Astroid 1.png.meta
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
   userData: 
