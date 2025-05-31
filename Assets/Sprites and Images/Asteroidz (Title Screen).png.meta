@@ -96,6 +96,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -135,7 +148,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+<<<<<<<< HEAD:Assets/Sprites and Images/Astroid 1.png.meta
+      Astroid_0: -876360174021668994
+========
+<<<<<<<< HEAD:Assets/Sprites and Images/Asteroidz - Background.jpg.meta
+      Asteroidz - Background_0: 6640557125993426464
+========
       ASTEROIDZ (2)_0: 8427397202730112753
+>>>>>>>> origin/Kyra:Assets/Sprites and Images/Asteroidz (Title Screen).png.meta
+>>>>>>>> Darius:Assets/Sprites and Images/Asteroidz (Title Screen).png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

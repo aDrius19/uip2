@@ -24,7 +24,7 @@ public class move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
         {
             Vector2 forward = transform.up; // Get the forward direction of the object
             velocity += forward * acceleration * Time.deltaTime; // Increase velocity in the forward direction
@@ -33,14 +33,14 @@ public class move : MonoBehaviour
             {
                 velocity = velocity.normalized * maxSpeed; // Clamp the velocity to the maximum speed
             }
-            
+
             // Play exhaust particles if they are not already playing
             if (exhaustParticles != null && !exhaustParticles.isPlaying)
             {
                 exhaustParticles.Play();
             }
         }
-        else 
+        else
         {
             velocity = Vector2.Lerp(velocity, Vector2.zero, frictionCoefficient * Time.deltaTime); // Gradually reduce velocity when not accelerating
 
@@ -50,13 +50,13 @@ public class move : MonoBehaviour
                 exhaustParticles.Stop();
             }
         }
-        
+
         // Rotate the object based on arrow key input
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
             transform.Rotate(0, 0, rotationSpeed * Time.deltaTime);
         }
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
             transform.Rotate(0, 0, -rotationSpeed * Time.deltaTime);
         }
