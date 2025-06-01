@@ -33,15 +33,15 @@ public class AsteroidSpawner : MonoBehaviour
 
     Vector2 GetOffscreenSpawnPoint()
     {
-        int edge = Random.Range(0, 4); // 0 = Left, 1 = Right, 2 = Top, 3 = Bottom
+        int edge = Random.Range(0, 4);
         float x = 0f, y = 0f;
 
         switch (edge)
         {
-            case 0: x = -10f; y = Random.Range(-5f, 5f); break; // Left
-            case 1: x = 10f;  y = Random.Range(-5f, 5f); break; // Right
-            case 2: x = Random.Range(-9f, 9f); y = 6f;  break;  // Top
-            case 3: x = Random.Range(-9f, 9f); y = -6f; break;  // Bottom
+            case 0: x = -10f; y = Random.Range(-5f, 5f); break;
+            case 1: x = 10f;  y = Random.Range(-5f, 5f); break;
+            case 2: x = Random.Range(-9f, 9f); y = 6f;  break;
+            case 3: x = Random.Range(-9f, 9f); y = -6f; break;
         }
 
         return new Vector2(x, y);

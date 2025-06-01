@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class AsteroidScript : MonoBehaviour
 {
     public Vector2 pointA = new Vector2(-10f, 0f);
@@ -7,29 +8,30 @@ public class AsteroidScript : MonoBehaviour
     public float moveSpeed = 2f;
     public float spinSpeed = 90f;
 
-    private Vector2 moveDirection;
+    private Rigidbody2D rb;
 
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         SetDirection();
-    }
-
-    void Update()
-    {
-        transform.Translate(moveDirection * moveSpeed * Time.deltaTime, Space.World);
-        transform.Rotate(Vector3.forward * spinSpeed * Time.deltaTime);
-
-        if (transform.position.x < -11f || transform.position.x > 11f ||
-            transform.position.y < -7f || transform.position.y > 7f)
-        {
-            Respawn();
-        }
     }
 
     void SetDirection()
     {
         transform.position = pointA;
-        moveDirection = (pointB - pointA).normalized;
+
+        Vector2 moveDirection = (pointB - pointA).normalized;
+        rb.linearVelocity = moveDirection * moveSpeed;
+        rb.angularVelocity = spinSpeed;
+    }
+
+    void Update()
+    {
+        if (transform.position.x < -11f || transform.position.x > 11f ||
+            transform.position.y < -7f || transform.position.y > 7f)
+        {
+            Respawn();
+        }
     }
 
     void Respawn()
