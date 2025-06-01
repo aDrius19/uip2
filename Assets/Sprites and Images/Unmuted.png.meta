@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 9715ef42026fa48e19804774d4084f40
+guid: c3e7a29acf3c049b09db19b08273120e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3414157193456052679
-    second: Asteroidz (Title Screen)_0
+      213: -7219833700884457764
+    second: icons8-voice-96_0
+  - first:
+      213: -8409065866499602764
+    second: icons8-voice-96_1
+  - first:
+      213: -162003915655694844
+    second: icons8-voice-96_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,9 +52,9 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -100,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Asteroidz (Title Screen)_0
+      name: icons8-voice-96_0
       rect:
         serializedVersion: 2
-        x: 396
-        y: 472
-        width: 1128
-        height: 136
+        x: 11
+        y: 11
+        width: 42
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +121,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 93615bc1f1a7e90d0800000000000000
-      internalID: -3414157193456052679
+      spriteID: cd65369508ffdcb90800000000000000
+      internalID: -7219833700884457764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons8-voice-96_1
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 31
+        width: 12
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b6cd66c52ffc4b80800000000000000
+      internalID: -8409065866499602764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons8-voice-96_2
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 18
+        width: 16
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 406be1b0c4270cdf0800000000000000
+      internalID: -162003915655694844
       vertices: []
       indices: 
       edges: []
@@ -125,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Asteroidz (Title Screen)_0: -3414157193456052679
+      icons8-voice-96_0: -7219833700884457764
+      icons8-voice-96_1: -8409065866499602764
+      icons8-voice-96_2: -162003915655694844
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
