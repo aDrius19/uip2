@@ -1,10 +1,10 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartGame : MonoBehaviour
+public class ClassicMode : MonoBehaviour
 {
     public void LoadGame()
     {
-        SceneManager.LoadScene("World");
+        SceneManager.LoadScene("ClassicMode");
     }
 }

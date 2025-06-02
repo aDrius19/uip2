@@ -42,8 +42,8 @@ public class AsteroidScript : MonoBehaviour
         switch (edge)
         {
             case 0: x = -10f; y = Random.Range(-5f, 5f); break;
-            case 1: x = 10f;  y = Random.Range(-5f, 5f); break;
-            case 2: x = Random.Range(-9f, 9f); y = 6f;  break;
+            case 1: x = 10f; y = Random.Range(-5f, 5f); break;
+            case 2: x = Random.Range(-9f, 9f); y = 6f; break;
             case 3: x = Random.Range(-9f, 9f); y = -6f; break;
         }
 
@@ -57,5 +57,23 @@ public class AsteroidScript : MonoBehaviour
         spinSpeed = Random.Range(-90f, 90f);
 
         SetDirection();
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Bullet"))
+        {
+            GameScore.instance.AddScore(10);
+            Destroy(other.gameObject);
+            Destroy(gameObject);
+        }
+        
+        if (other.CompareTag("Player"))
+        {
+            GameController.instance.GameOver();
+            Destroy(other.gameObject);
+            Destroy(gameObject); 
+        }
+        
     }
 }
