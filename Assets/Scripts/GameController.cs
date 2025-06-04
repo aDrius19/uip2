@@ -22,6 +22,17 @@ public class GameController : MonoBehaviour
         exitGameButton.SetActive(false);
     }
 
+    void Update()
+    {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            restartButton.SetActive(true);
+            exitGameButton.SetActive(true);
+            Time.timeScale = 0f;
+        }
+
+    }
+
     public void GameOver()
     {
         gameOver.gameObject.SetActive(true);
@@ -47,7 +58,6 @@ public class GameController : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene("Asteroidz");
     }
-
 }
 
 
