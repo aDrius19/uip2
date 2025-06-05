@@ -3,17 +3,42 @@ using UnityEngine;
 public class AsteroidSpawner : MonoBehaviour
 {
     public GameObject asteroidPrefab;
-    public int numberOfAsteroids = 5;
-    public float minSpeed = 1f;
-    public float maxSpeed = 3f;
-    public float minSpin = -90f;
-    public float maxSpin = 90f;
+    public float spawnInterval = 3f;
+    public float difficultyTimer = 0f;
+    public float difficultyIncreaseTime = 15f;
+    public float minSpawnInterval = 0.8f;
+    public float speedIncreaseAmount = 0.3f;
+
+    private float spawnTimer = 0f;
+    private float baseMinSpeed = 1f;
+    private float baseMaxSpeed = 3f;
 
     void Start()
     {
-        for (int i = 0; i < numberOfAsteroids; i++)
+        for (int i = 0; i < 3; i++)
         {
             SpawnAsteroid();
+        }
+    }
+
+    void Update()
+    {
+        spawnTimer += Time.deltaTime;
+        difficultyTimer += Time.deltaTime;
+
+        if (spawnTimer >= spawnInterval)
+        {
+            SpawnAsteroid();
+            spawnTimer = 0f;
+        }
+
+        // Every X seconds, increase difficulty
+        if (difficultyTimer >= difficultyIncreaseTime)
+        {
+            baseMinSpeed += speedIncreaseAmount;
+            baseMaxSpeed += speedIncreaseAmount;
+            spawnInterval = Mathf.Max(minSpawnInterval, spawnInterval - 0.3f);
+            difficultyTimer = 0f;
         }
     }
 
@@ -27,21 +52,21 @@ public class AsteroidSpawner : MonoBehaviour
         AsteroidScript mover = asteroid.GetComponent<AsteroidScript>();
         mover.pointA = pointA;
         mover.pointB = pointB;
-        mover.moveSpeed = Random.Range(minSpeed, maxSpeed);
-        mover.spinSpeed = Random.Range(minSpin, maxSpin);
+        mover.moveSpeed = Random.Range(baseMinSpeed, baseMaxSpeed);
+        mover.spinSpeed = Random.Range(-90f, 90f);
     }
 
     Vector2 GetOffscreenSpawnPoint()
     {
-        int edge = Random.Range(0, 4); // 0 = Left, 1 = Right, 2 = Top, 3 = Bottom
+        int edge = Random.Range(0, 4);
         float x = 0f, y = 0f;
 
         switch (edge)
         {
-            case 0: x = -10f; y = Random.Range(-5f, 5f); break; // Left
-            case 1: x = 10f;  y = Random.Range(-5f, 5f); break; // Right
-            case 2: x = Random.Range(-9f, 9f); y = 6f;  break;  // Top
-            case 3: x = Random.Range(-9f, 9f); y = -6f; break;  // Bottom
+            case 0: x = -10f; y = Random.Range(-5f, 5f); break;
+            case 1: x = 10f;  y = Random.Range(-5f, 5f); break;
+            case 2: x = Random.Range(-9f, 9f); y = 6f; break;
+            case 3: x = Random.Range(-9f, 9f); y = -6f; break;
         }
 
         return new Vector2(x, y);
