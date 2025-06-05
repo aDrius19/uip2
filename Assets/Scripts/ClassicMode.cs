@@ -3,9 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class ClassicMode : MonoBehaviour
 {
-    public void LoadGame()
+    public void GoToScene(string sceneName)
     {
-        SceneManager.LoadScene("ClassicMode");
+        SceneManager.LoadScene(sceneName);
     }
 
     public void QuitApp()
