@@ -32,7 +32,6 @@ public class AsteroidSpawner : MonoBehaviour
             spawnTimer = 0f;
         }
 
-        // Every X seconds, increase difficulty
         if (difficultyTimer >= difficultyIncreaseTime)
         {
             baseMinSpeed += speedIncreaseAmount;
