@@ -16,7 +16,51 @@ MonoBehaviour:
   m_TableCollectionNameGuidString: 20205a3879c529c479b0aee8e4e7ca3a
   m_Entries:
   - m_Id: 32774610944
-    m_Key: textKey
+    m_Key: PlayButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3558442179014656
+    m_Key: TutorialButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3558563759304704
+    m_Key: QuitButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3561013023125504
+    m_Key: LanguageSettings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3561268548513792
+    m_Key: ENLang
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3561387985514496
+    m_Key: ROLang
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3561471485718528
+    m_Key: SELang
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3561644064550912
+    m_Key: BackToMainMenu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3588612394889216
+    m_Key: GameOverMenu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3588940464959488
+    m_Key: RestartButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3588972652048384
+    m_Key: ExitGameButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3604281974894592
+    m_Key: ScoreChange
     m_Metadata:
       m_Items: []
   m_Metadata:

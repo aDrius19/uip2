@@ -24,11 +24,18 @@ public class GameController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.Escape))
+        if (Input.GetKey(KeyCode.Escape)) // pop-up a basic in game restart menu
         {
             restartButton.SetActive(true);
             exitGameButton.SetActive(true);
             Time.timeScale = 0f;
+        }
+
+        if (Input.GetKey(KeyCode.BackQuote)) // resume the gama session at the current time state
+        {
+            restartButton.SetActive(false);
+            exitGameButton.SetActive(false);
+            Time.timeScale = 1f;
         }
 
     }

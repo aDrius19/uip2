@@ -16,12 +16,64 @@ MonoBehaviour:
     m_Code: ro
   m_SharedData: {fileID: 11400000, guid: 20205a3879c529c479b0aee8e4e7ca3a, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 722892958855331938
   m_TableData:
   - m_Id: 32774610944
-    m_Localized: Mod Clasic
+    m_Localized: "Joac\u0103"
     m_Metadata:
       m_Items: []
+  - m_Id: 3558442179014656
+    m_Localized: Tutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3558563759304704
+    m_Localized: "P\u0103r\u0103se\u0219te"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3561013023125504
+    m_Localized: "Set\u0103ri penru limb\u0103"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3561268548513792
+    m_Localized: "Englez\u0103"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3561387985514496
+    m_Localized: "Rom\xE2n\u0103"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3561471485718528
+    m_Localized: "Suedez\u0103"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3561644064550912
+    m_Localized: Meniu principal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3588612394889216
+    m_Localized: "SF\u0102R\u0218ITUL JOCULUI"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3588940464959488
+    m_Localized: "REJOAC\u0102 DIN NOU"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3588972652048384
+    m_Localized: MERGI LA MENIUL PRINCIPAL
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3604281974894592
+    m_Localized: SCOR
+    m_Metadata:
+      m_Items:
+      - rid: 722892958855331938
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 722892958855331938
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 
+        m_SharedEntries:
+        - id: 3604281974894592

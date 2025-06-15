@@ -16,12 +16,64 @@ MonoBehaviour:
     m_Code: en
   m_SharedData: {fileID: 11400000, guid: 20205a3879c529c479b0aee8e4e7ca3a, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 722892958855331937
   m_TableData:
   - m_Id: 32774610944
-    m_Localized: Classic Mode
+    m_Localized: Play
     m_Metadata:
       m_Items: []
+  - m_Id: 3558442179014656
+    m_Localized: Tutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3558563759304704
+    m_Localized: Quit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3561013023125504
+    m_Localized: Language Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3561268548513792
+    m_Localized: English
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3561387985514496
+    m_Localized: Romanian
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3561471485718528
+    m_Localized: Swedish
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3561644064550912
+    m_Localized: Main menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3588612394889216
+    m_Localized: GAME OVER
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3588940464959488
+    m_Localized: PLAY AGAIN
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3588972652048384
+    m_Localized: EXIT TO MAIN MENU
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3604281974894592
+    m_Localized: SCORE
+    m_Metadata:
+      m_Items:
+      - rid: 722892958855331937
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 722892958855331937
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 
+        m_SharedEntries:
+        - id: 3604281974894592
