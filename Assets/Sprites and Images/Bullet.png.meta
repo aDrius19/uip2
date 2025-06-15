@@ -1,7 +1,19 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Sprites and Images/Spaceship.png.meta
+guid: b29f5940de7d340a896e15b4727cf267
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 798197692528133647
+    second: 11430161_0
+========
 guid: 29ec29061c6c942519f247f78d5ca4dc
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 2208703988740019828
+    second: Bullet_0
+>>>>>>>> kyra-new-branch:Assets/Sprites and Images/Bullet.png.meta
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -39,13 +51,13 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 0
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -63,9 +75,9 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   swizzle: 50462976
-  cookieLightType: 2
+  cookieLightType: 0
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
@@ -85,7 +97,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -98,7 +110,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,23 +122,38 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bullet_1
+<<<<<<<< HEAD:Assets/Sprites and Images/Spaceship.png.meta
+      name: 11430161_0
       rect:
         serializedVersion: 2
-        x: 277
-        y: 41
-        width: 551
-        height: 893
+        x: 579
+        y: 813
+        width: 2238
+        height: 3678
+========
+      name: Bullet_0
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 0
+        width: 174
+        height: 965
+>>>>>>>> kyra-new-branch:Assets/Sprites and Images/Bullet.png.meta
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d59140e1667b39a44b100e77dd100dc1
-      internalID: 891225062
+<<<<<<<< HEAD:Assets/Sprites and Images/Spaceship.png.meta
+      spriteID: f060da38294c31b00800000000000000
+      internalID: 798197692528133647
+========
+      spriteID: 47656d65394e6ae10800000000000000
+      internalID: 2208703988740019828
+>>>>>>>> kyra-new-branch:Assets/Sprites and Images/Bullet.png.meta
       vertices: []
       indices: 
       edges: []
@@ -135,7 +162,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 132b5599041492f44b920c01606f1647
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -145,8 +172,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Bullet_0: -331631672
-      Bullet_1: 891225062
+<<<<<<<< HEAD:Assets/Sprites and Images/Spaceship.png.meta
+      11430161_0: 798197692528133647
+========
+      Bullet_0: 2208703988740019828
+>>>>>>>> kyra-new-branch:Assets/Sprites and Images/Bullet.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

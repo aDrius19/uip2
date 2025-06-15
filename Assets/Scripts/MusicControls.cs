@@ -10,19 +10,28 @@ public class MusicController : MonoBehaviour
 
     private bool isMuted = false;
     private Image buttonImage;
+
     void Start()
     {
         buttonImage = muteButton.GetComponent<Image>();
         muteButton.onClick.AddListener(ToggleMute);
+        ApplyMute();
         UpdateIcon();
     }
 
     void ToggleMute()
     {
         isMuted = !isMuted;
-        backgroundMusic.mute = isMuted;
+        ApplyMute();
         UpdateIcon();
     }
+
+    void ApplyMute()
+    {
+        backgroundMusic.mute = isMuted;
+        AudioListener.volume = isMuted ? 0f : 1f;
+    }
+
     void UpdateIcon()
     {
         if (buttonImage != null)
@@ -31,3 +40,4 @@ public class MusicController : MonoBehaviour
         }
     }
 }
+

@@ -169,3 +169,4 @@ MonoBehaviour:
   pointB: {x: 10, y: 0}
   moveSpeed: 2
   spinSpeed: 90
+  explosionSound: {fileID: 8300000, guid: 26f97885d61a242eb9839f626a0c8188, type: 3}

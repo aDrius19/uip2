@@ -8,6 +8,7 @@ public class AsteroidScript : MonoBehaviour
     public float moveSpeed = 2f;
     public float spinSpeed = 90f;
 
+    public AudioClip explosionSound;
     private Rigidbody2D rb;
 
     void Start()
@@ -63,17 +64,28 @@ public class AsteroidScript : MonoBehaviour
     {
         if (other.CompareTag("Bullet"))
         {
-            GameStats.instance.AddScore(10);
+            GameScore.instance.AddScore(10);
             Destroy(other.gameObject);
+
+            PlayExplosionSound();
             Destroy(gameObject);
         }
-        
+
         if (other.CompareTag("Player"))
         {
             GameController.instance.GameOver();
             Destroy(other.gameObject);
-            Destroy(gameObject); 
+
+            PlayExplosionSound();
+            Destroy(gameObject);
         }
-        
+    }
+
+    void PlayExplosionSound()
+    {
+        if (explosionSound != null)
+        {
+            AudioSource.PlayClipAtPoint(explosionSound, transform.position, 2.0f);
+        }
     }
 }
