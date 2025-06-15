@@ -63,6 +63,14 @@ MonoBehaviour:
     m_Key: ScoreChange
     m_Metadata:
       m_Items: []
+  - m_Id: 3662262972231680
+    m_Key: ResolutionSettings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3664973507637248
+    m_Key: Timer
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

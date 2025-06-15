@@ -16,8 +16,7 @@ MonoBehaviour:
     m_Code: ro
   m_SharedData: {fileID: 11400000, guid: 20205a3879c529c479b0aee8e4e7ca3a, type: 2}
   m_Metadata:
-    m_Items:
-    - rid: 722892958855331938
+    m_Items: []
   m_TableData:
   - m_Id: 32774610944
     m_Localized: "Joac\u0103"
@@ -32,7 +31,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3561013023125504
-    m_Localized: "Set\u0103ri penru limb\u0103"
+    m_Localized: "Set\u0103ri pentru limb\u0103"
     m_Metadata:
       m_Items: []
   - m_Id: 3561268548513792
@@ -66,14 +65,15 @@ MonoBehaviour:
   - m_Id: 3604281974894592
     m_Localized: SCOR
     m_Metadata:
-      m_Items:
-      - rid: 722892958855331938
+      m_Items: []
+  - m_Id: 3662262972231680
+    m_Localized: "Set\u0103ri pentru resolu\u021Bia ecranului"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3664973507637248
+    m_Localized: TIMP
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
-    RefIds:
-    - rid: 722892958855331938
-      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
-      data:
-        m_Entries: 
-        m_SharedEntries:
-        - id: 3604281974894592
+    RefIds: []
