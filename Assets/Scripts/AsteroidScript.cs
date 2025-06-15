@@ -64,7 +64,7 @@ public class AsteroidScript : MonoBehaviour
     {
         if (other.CompareTag("Bullet"))
         {
-            GameScore.instance.AddScore(10);
+            GameStats.instance.AddScore(10);
             Destroy(other.gameObject);
 
             PlayExplosionSound();

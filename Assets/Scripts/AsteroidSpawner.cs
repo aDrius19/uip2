@@ -45,27 +45,6 @@ public class AsteroidSpawner : MonoBehaviour
             difficultyTimer = 0f;
         }
     }
-
-    void Update()
-    {
-        spawnTimer += Time.deltaTime;
-        difficultyTimer += Time.deltaTime;
-
-        if (spawnTimer >= spawnInterval)
-        {
-            SpawnAsteroid();
-            spawnTimer = 0f;
-        }
-
-        if (difficultyTimer >= difficultyIncreaseTime)
-        {
-            baseMinSpeed += speedIncreaseAmount;
-            baseMaxSpeed += speedIncreaseAmount;
-            spawnInterval = Mathf.Max(minSpawnInterval, spawnInterval - 0.3f);
-            difficultyTimer = 0f;
-        }
-    }
-
     void SpawnAsteroid()
     {
         Vector2 pointA = GetOffscreenSpawnPoint();
