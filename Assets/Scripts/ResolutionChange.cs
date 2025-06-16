@@ -1,15 +1,15 @@
+/* ResolutionChange.cs
+ * This file contains the ResolutionChange class which controls the settings of the screen resolution.
+ */
 using UnityEngine;
 
 public class ResolutionChange : MonoBehaviour
 {
-    
-    void Start()
-    {
 
-    }
-
-    
-   public void Resolution1()
+    /// <summary>
+    /// Depending on the resolution selected in settings, these methods will update the screen resolution when in windowed mode.
+    /// </summary>
+    public void Resolution1()
     {
         Screen.SetResolution(800, 600, FullScreenMode.Windowed);
     }
