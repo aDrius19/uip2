@@ -74,6 +74,47 @@ MonoBehaviour:
     m_Localized: TIMP
     m_Metadata:
       m_Items: []
+  - m_Id: 4123867389288448
+    m_Localized: "Bun venit la jocul Asteroidz!\nAceste este un mic tutorial de cum
+      se joac\u0103 acest joc, dar \u0219i de controale \u0219i op\u021Biunile acestuia. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4125193665961984
+    m_Localized: Perfect!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4125465058402304
+    m_Localized: "Apas\u0103 pe tasta W sau s\u0103geata sus pentru a mi\u0219ca
+      \xEEnainte nava!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4126548698783744
+    m_Localized: "Apas\u0103 pe tasta A / s\u0103geat\u0103 st\xE2nga SAU\ntasta
+      D / s\u0103geat\u0103 dreapta pentru a roti st\xE2nga-dreapta nava!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4127541020778496
+    m_Localized: "Apas\u0103 tasta ESC pentru a vedea op\u021Biunile de meniu!\nApas\u0103
+      tasta ` (ghilimea \xEEntoars\u0103) pentru a \xEEnchide acest meniu!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4128288542220288
+    m_Localized: "Mai sus se afl\u0103 c\xE2teva statistici din joc cum ar fi timpul
+      \u0219i scorul!\nUrm\u0103re\u0219te s\u0103geata pentru a le vizualiza!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4129179185897472
+    m_Localized: "Asteroizii vin dup\u0103 tine!\nApas\u0103 tasta SPACE pentru a
+      trage \xEEn ei!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4129949021036544
+    m_Localized: 'Acesta a fost tutorialul!
+
+      Mergi la meniul principal pentru
+      a experienta jocul complet!'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

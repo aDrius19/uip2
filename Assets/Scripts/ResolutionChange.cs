@@ -2,13 +2,6 @@ using UnityEngine;
 
 public class ResolutionChange : MonoBehaviour
 {
-    
-    void Start()
-    {
-
-    }
-
-    
    public void Resolution1()
     {
         Screen.SetResolution(800, 600, FullScreenMode.Windowed);

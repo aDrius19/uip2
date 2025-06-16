@@ -60,10 +60,10 @@ public class GameController : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     
-    public void ExitGame()
+    public void ExitGame(string sceneName)
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Asteroidz");
+        SceneManager.LoadScene(sceneName);
     }
 }
 
