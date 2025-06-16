@@ -1,6 +1,7 @@
+// AsteroidScript.cs
+// This file contains the AsteroidScript class which controls asteroid movement, respawning, and interactions with other game objects.
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D))]
 public class AsteroidScript : MonoBehaviour
 {
     public Vector2 pointA = new Vector2(-10f, 0f);
@@ -11,12 +12,14 @@ public class AsteroidScript : MonoBehaviour
     public AudioClip explosionSound;
     private Rigidbody2D rb;
 
+    // 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         SetDirection();
     }
 
+    // This method sets the initial velocity and rotation of the asteroid.
     void SetDirection()
     {
         transform.position = pointA;
