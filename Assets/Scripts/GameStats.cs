@@ -1,3 +1,6 @@
+/* GameController.cs
+ * This file contains the GameStats class which manages the game score and timer.
+ */
 using UnityEngine;
 using TMPro;
 
@@ -12,11 +15,18 @@ public class GameStats : MonoBehaviour
     private float timeCounter;
     private int score = 0;
 
+    /// <summary>
+    /// This method runs before the Start() method and allows other scripts to access GameStats.
+    /// </summary>
     void Awake()
     {
         instance = this;
     }
 
+    /// <summary>
+    /// Start is called once before the first execution of Update after the MonoBehaviour is created.
+    /// This method controls the game score and timer.
+    /// </summary>
     private void Update()
     {
         timeCounter += Time.deltaTime;
@@ -25,6 +35,9 @@ public class GameStats : MonoBehaviour
         timerTracker.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 
+    /// <summary>
+    /// This game adds the score to the current score and updates the UI.
+    /// </summary>
     public void AddScore(int value)
     {
         score += value;
