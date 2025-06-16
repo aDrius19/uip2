@@ -1,9 +1,15 @@
+/* AsteroidSpawner.cs
+ * This file contains the AsteroidSpawner class which controls how asteroids are initially spawned in the game.
+ * It manages the spawn intervals, difficulty scaling, and the asteroid speed.
+ */
 using UnityEngine;
 
 public class AsteroidSpawner : MonoBehaviour
 {
     public GameObject asteroidPrefab;
-    public int asteroidsToSpawn = 20; // default total number of asteroids to be spawn in a game session
+
+     // Default total number of asteroids to be spawn in a game session
+    public int asteroidsToSpawn = 20;
     public float spawnInterval = 3f;
     public float difficultyTimer = 0f;
     public float difficultyIncreaseTime = 15f;
@@ -15,6 +21,10 @@ public class AsteroidSpawner : MonoBehaviour
     private float baseMinSpeed = 1f;
     private float baseMaxSpeed = 3f;
 
+    /// <summary>
+    /// Start is called once before the first execution of Update after the MonoBehaviour is created.
+    /// The game starts with 3 asteroids spawned.
+    /// </summary>
     void Start()
     {
         for (int i = 0; i < 3; i++)
@@ -25,18 +35,23 @@ public class AsteroidSpawner : MonoBehaviour
         asteroidCounter = 3;
     }
 
+    /// <summary>
+    /// Update is called once per frame.
+    /// This method determines when to spawn new asteroids based on the spawn interval and difficulty timer.
+    /// </summary>
     void Update()
     {
         spawnTimer += Time.deltaTime;
         difficultyTimer += Time.deltaTime;
 
-        if (spawnTimer >= spawnInterval && asteroidCounter < asteroidsToSpawn) // limit the spawn of the asteroids to a given number
+        // Spawns a new asteroid if spawn timer has reached the spawn interval
+        if (spawnTimer >= spawnInterval && asteroidCounter < asteroidsToSpawn)
         {
             SpawnAsteroid();
             spawnTimer = 0f;
         }
 
-        // Every X seconds, increase difficulty
+        // Increases the speed of asteroids and decreases the spawn interval to make the game more difficult
         if (difficultyTimer >= difficultyIncreaseTime)
         {
             baseMinSpeed += speedIncreaseAmount;
@@ -45,6 +60,10 @@ public class AsteroidSpawner : MonoBehaviour
             difficultyTimer = 0f;
         }
     }
+
+    /// <summary>
+    /// This method spawns a new asteroid offscreen and determines its direction and speed.
+    /// </summary>
     void SpawnAsteroid()
     {
         Vector2 pointA = GetOffscreenSpawnPoint();
@@ -61,6 +80,9 @@ public class AsteroidSpawner : MonoBehaviour
         asteroidCounter++;
     }
 
+    /// <summary>
+    /// This method spawns the asteroid in a position at the edge of the screen.
+    /// </summary>
     Vector2 GetOffscreenSpawnPoint()
     {
         int edge = Random.Range(0, 4);
@@ -77,6 +99,9 @@ public class AsteroidSpawner : MonoBehaviour
         return new Vector2(x, y);
     }
 
+    /// <summary>
+    /// This method returns a random point on the screen where the asteroid will move towards.
+    /// </summary>
     Vector2 GetOnscreenTargetPoint()
     {
         return new Vector2(
@@ -85,7 +110,7 @@ public class AsteroidSpawner : MonoBehaviour
         );
     }
 
-    // public getter and setter for other classes to use
+    // Public getter and setter of the asteroid count for other classes to use.
     public int AsteroidCounter
     {
         get

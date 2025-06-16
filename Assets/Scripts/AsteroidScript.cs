@@ -1,25 +1,38 @@
-// AsteroidScript.cs
-// This file contains the AsteroidScript class which controls asteroid movement, respawning, and interactions with other game objects.
+/* AsteroidScript.cs
+ * This file contains the AsteroidScript class which controls asteroid movement, respawning, and interactions with other game objects.
+ */
 using UnityEngine;
 
 public class AsteroidScript : MonoBehaviour
 {
+    // Staring point of the asteroid
     public Vector2 pointA = new Vector2(-10f, 0f);
+
+    // Ending point of the asteroid
     public Vector2 pointB = new Vector2(10f, 0f);
+
+    // Asteroid movement speed
     public float moveSpeed = 2f;
+
+    // Asteroid rotation speed
     public float spinSpeed = 90f;
 
     public AudioClip explosionSound;
     private Rigidbody2D rb;
 
-    // 
+    /// <summary>
+    /// Start is called once before the first execution of Update after the MonoBehaviour is created.
+    /// This method intializes the physics and movement of the asteroid.
+    /// </summary>
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         SetDirection();
     }
 
-    // This method sets the initial velocity and rotation of the asteroid.
+    /// <summary>
+    /// This method sets the initial velocity and rotation of the asteroid from pointA to pointB.
+    /// </summary>
     void SetDirection()
     {
         transform.position = pointA;
@@ -29,6 +42,10 @@ public class AsteroidScript : MonoBehaviour
         rb.angularVelocity = spinSpeed;
     }
 
+    /// <summary>
+    /// Update is called once per frame
+    /// This method checks if the asteroid is out of bounds. If it is, it respawns the asteroid in a new position.
+    /// </summary>
     void Update()
     {
         if (transform.position.x < -11f || transform.position.x > 11f ||
@@ -38,6 +55,10 @@ public class AsteroidScript : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// This method respawns the asteroid in a new position at the edge of the screen.
+    /// It also chooses a new direction and speed for the asteroid.
+    /// </summary>
     void Respawn()
     {
         int edge = Random.Range(0, 4);
@@ -63,6 +84,10 @@ public class AsteroidScript : MonoBehaviour
         SetDirection();
     }
 
+    /// <summary>
+    /// This method destroys the asteroid and plays an explosion sound when it collides with a bullet or a player.
+    ///  It also updates the game score if a bullet hits the asteroid.
+    /// </summary>
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Bullet"))
@@ -84,6 +109,9 @@ public class AsteroidScript : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// This method plays an explosion sound effect when the asteroid is destroyed.
+    /// </summary>
     void PlayExplosionSound()
     {
         if (explosionSound != null)
