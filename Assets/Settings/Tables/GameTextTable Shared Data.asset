@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: GameTextTable Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: GameTextTable
+  m_TableCollectionNameGuidString: 20205a3879c529c479b0aee8e4e7ca3a
+  m_Entries:
+  - m_Id: 32774610944
+    m_Key: PlayButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3558442179014656
+    m_Key: TutorialButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3558563759304704
+    m_Key: QuitButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3561013023125504
+    m_Key: LanguageSettings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3561268548513792
+    m_Key: ENLang
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3561387985514496
+    m_Key: ROLang
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3561471485718528
+    m_Key: SELang
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3561644064550912
+    m_Key: BackToMainMenu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3588612394889216
+    m_Key: GameOverMenu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3588940464959488
+    m_Key: RestartButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3588972652048384
+    m_Key: ExitGameButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3604281974894592
+    m_Key: ScoreChange
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3662262972231680
+    m_Key: ResolutionSettings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3664973507637248
+    m_Key: Timer
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 722892737088848172
+  references:
+    version: 2
+    RefIds:
+    - rid: 722892737088848172
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1749131188916
