@@ -1,4 +1,4 @@
-/* GameController.cs
+/* GameStats.cs
  * This file contains the GameStats class which manages the game score and timer.
  */
 using UnityEngine;
