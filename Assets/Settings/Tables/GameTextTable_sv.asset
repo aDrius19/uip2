@@ -74,6 +74,45 @@ MonoBehaviour:
     m_Localized: TID
     m_Metadata:
       m_Items: []
+  - m_Id: 4123867389288448
+    m_Localized: "V\xE4lkommen till Asteroidz Spela!\r\nDetta \xE4r en kort handledning
+      om hur man spelar spelet, men bekanta dig ocks\xE5 med kontrollerna och alternativen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4125193665961984
+    m_Localized: Perfekt!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4125465058402304
+    m_Localized: "Tryck p\xE5 W eller upp\xE5tpiltangenten f\xF6r att g\xE5 fram\xE5t
+      med rymdskeppet!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4126548698783744
+    m_Localized: "Tryck p\xE5 A / v\xE4nsterpiltangenten ELLER \nD / h\xF6gerpiltangenten
+      f\xF6r att rotera rymdskeppet \xE5t v\xE4nster eller h\xF6ger!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4127541020778496
+    m_Localized: "Tryck p\xE5 ESC-tangenten f\xF6r att se menyalternativen!\r\nTryck
+      p\xE5 ` (bak\xE5t citera)-tangenten f\xF6r att st\xE4nga den h\xE4r menyn!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4128288542220288
+    m_Localized: "Ovan finns lite matchstatistik g\xE4llande tid och po\xE4ng! \nF\xF6lj
+      pilen f\xF6r att visualisera den!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4129179185897472
+    m_Localized: "Asteroider \xE4r p\xE5 v\xE4g! \nTryck p\xE5 mellanslagstangenten
+      f\xF6r att skjuta dem!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4129949021036544
+    m_Localized: "Detta var handledningen! \nG\xE5 till huvudmenyn f\xF6r att uppleva
+      hela spelet!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

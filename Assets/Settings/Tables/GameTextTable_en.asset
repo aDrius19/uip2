@@ -74,6 +74,55 @@ MonoBehaviour:
     m_Localized: TIME
     m_Metadata:
       m_Items: []
+  - m_Id: 4123867389288448
+    m_Localized: 'Welcome to Asteroidz Game!
+
+      This is a small tutorial on how
+      to play this game, but also get familiar with the controlls and options.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4125193665961984
+    m_Localized: Perfect!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4125465058402304
+    m_Localized: Press W or Up Arrow key to move forward with the spaceship!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4126548698783744
+    m_Localized: 'Press A / Left Arrow key OR
+
+      D / Right Arrow key to rotate
+      left or right the spaceship!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4127541020778496
+    m_Localized: 'Press ESC key to see the menu options!
+
+      Press ` (Back Quote)
+      key to close this menu!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4128288542220288
+    m_Localized: 'Above are some game statistics regarding time and score!
+
+      Follow
+      the arrow to visualize them!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4129179185897472
+    m_Localized: 'Asteroids are coming!
+
+      Press SPACE key to shoot them!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4129949021036544
+    m_Localized: 'This was the tutorial!
+
+      Go to the main menu to experience
+      the full game!'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

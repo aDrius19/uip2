@@ -3,6 +3,7 @@
  */
 using UnityEngine;
 
+
 public class AsteroidScript : MonoBehaviour
 {
     // Staring point of the asteroid
