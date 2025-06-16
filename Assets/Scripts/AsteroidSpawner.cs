@@ -110,7 +110,9 @@ public class AsteroidSpawner : MonoBehaviour
         );
     }
 
-    // Public getter and setter of the asteroid count for other classes to use.
+    /// <summary>
+    /// Public getter and setter of the asteroid count for other classes to use.
+    /// </summary>
     public int AsteroidCounter
     {
         get
