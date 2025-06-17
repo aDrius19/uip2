@@ -1,3 +1,6 @@
+/* LocaleSelector.cs
+ * This file contains the LocaleSelector class which allows users to control the language of the game.
+ */
 using System.Collections;
 using UnityEngine;
 
@@ -9,18 +12,29 @@ public class LocaleSelector : MonoBehaviour
 {
     private bool onceActive = false; // not to call the coroutine more than once
 
+    /// <summary>
+    /// Start is called once before the first execution of Update after the MonoBehaviour is created.
+    /// This method initializes the language based on the users' choice.
+    /// </summary>
     private void Start()
     {
         int localesID = PlayerPrefs.GetInt("LocaleKey");
         ChangeLocale(localesID);
     }
 
+    /// <summary>
+    /// This method checks that the language is not already set.
+    /// </summary>
     public void ChangeLocale(int localeID)
     {
         if (onceActive) return;
         StartCoroutine(SetLocale(localeID));
     }
     
+    /// <summary>
+    /// This method waits for the initialization of the localization settings.
+    /// It changes the language based on the users choice.
+    /// </summary>
     IEnumerator SetLocale(int _localeID)
     {
         onceActive = true;

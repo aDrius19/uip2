@@ -1,3 +1,6 @@
+/* TutorialManager.cs
+ * This file contains the TutorialManager class, which controls the tutorial for the game.
+ */
 using UnityEngine;
 
 public class TutorialManager : MonoBehaviour
@@ -11,6 +14,10 @@ public class TutorialManager : MonoBehaviour
     private Shooting shot;
     private int popUpIndex;
 
+    /// <summary>
+    /// Start is called once before the first execution of Update after the MonoBehaviour is created.
+    /// This method initializes player shooting, while hiding the stats and game object spawner.
+    /// </summary>
     private void Start()
     {
         shot = player.GetComponent<Shooting>();
@@ -20,6 +27,10 @@ public class TutorialManager : MonoBehaviour
         spawner.SetActive(false);
     }
 
+    /// <summary>
+    /// Update is called once per frame.
+    /// This method manages the tutorial and uses player input to progress through the tutorial.
+    /// </summary>
     private void Update()
     {
         for (int i = 0; i < popUps.Length; i++) //load all the pop-up messages
@@ -95,7 +106,7 @@ public class TutorialManager : MonoBehaviour
             case 5:
                 if (Input.GetKey(KeyCode.Escape))
                 {
-                    
+
                 }
 
                 if (Input.GetKey(KeyCode.BackQuote))
@@ -157,7 +168,7 @@ public class TutorialManager : MonoBehaviour
                     {
                         shot.enabled = true;
                     }
-                    
+
                     waitTime -= Time.deltaTime;
                 }
                 break;
