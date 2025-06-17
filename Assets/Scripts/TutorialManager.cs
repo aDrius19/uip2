@@ -1,3 +1,6 @@
+/* TutorialManager.cs
+ * This file contains the TutorialManager class,
+ */
 using UnityEngine;
 
 public class TutorialManager : MonoBehaviour
