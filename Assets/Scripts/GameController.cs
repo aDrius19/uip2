@@ -84,10 +84,10 @@ public class GameController : MonoBehaviour
     /// <summary>
     /// This method exits the game and returns to the main meny.
     /// </summary>
-    public void ExitGame()
+    public void ExitGame(string name1)
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Asteroidz");
+        SceneManager.LoadScene(name1);
     }
 }
 
