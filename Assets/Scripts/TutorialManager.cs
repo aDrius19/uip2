@@ -3,6 +3,8 @@
  */
 using UnityEngine;
 
+// credits to this video: https://www.youtube.com/watch?v=a1RFxtuTVsk&ab_channel=Blackthornprod
+// for showing us a simple script to include multiple pop-ups and to navigate from one to another
 public class TutorialManager : MonoBehaviour
 {
     public GameObject[] popUps;
