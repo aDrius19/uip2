@@ -25,7 +25,7 @@ public class ScreenWrap : MonoBehaviour
 
     /// <summary>
     /// Update is called once per frame.
-    /// This method checks the ship's position and moves it to the oposite side if it moves out of bounds.
+    /// This method checks the ship's position and moves it to the opposite side if it moves out of bounds.
     /// </summary>
     void Update()
     {
