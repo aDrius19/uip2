@@ -1,3 +1,6 @@
+/* move.cs
+ * This file contains the move class which handles how the player moves in the game.
+ */
 using UnityEngine;
 
 public class move : MonoBehaviour
@@ -8,19 +11,12 @@ public class move : MonoBehaviour
     public float maxSpeed = 5.0f; // Maximum speed in units per second
     public float frictionCoefficient = 0.5f; // Friction coefficient for deceleration
 
-    public ParticleSystem exhaustParticles; // Reference to the exhaust particle system
-
     private Vector2 velocity = Vector2.zero; // Current velocity of the object
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        if (exhaustParticles != null)
-        {
-            exhaustParticles.Stop(); // Ensure the exhaust is off at the start
-        }
-    }
-
+    /// <summary>
+    /// Update is called once per frame.
+    /// This method handles user input for the ship's movement and rotation.
+    /// </summary>
     void Update()
     {
         if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
@@ -32,22 +28,10 @@ public class move : MonoBehaviour
             {
                 velocity = velocity.normalized * maxSpeed; // Clamp the velocity to the maximum speed
             }
-
-            // Play exhaust particles if they are not already playing
-            if (exhaustParticles != null && !exhaustParticles.isPlaying)
-            {
-                exhaustParticles.Play();
-            }
         }
         else
         {
             velocity = Vector2.Lerp(velocity, Vector2.zero, frictionCoefficient * Time.deltaTime); // Gradually reduce velocity when not accelerating
-
-            // Disable exhaust particles
-            if (exhaustParticles != null && exhaustParticles.isPlaying)
-            {
-                exhaustParticles.Stop();
-            }
         }
 
         // Rotate the object based on arrow key input
