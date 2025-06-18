@@ -26,6 +26,8 @@ To build this project, we have used the platform Unity. We chose this platform f
 
 ## How to Run
 
+### Option 1: Unity
+
 1. Open the project in Unity Hub
 
    *This project was developed using Unity 6.0.0 (6000.0.45f1).*
@@ -33,8 +35,9 @@ To build this project, we have used the platform Unity. We chose this platform f
 
 3. Press the play button to begin game.
 
-*Alternatively, you can play the game from the .exe file in the [] folder.*
+### Option 2: Game
 
+1. Run the Asteroidz.exe file located in the [] folder.
 
 ## Use of Chatbots
 We used chatbots to help understand C# code structures, refine / clean up our code, and check grammar.
