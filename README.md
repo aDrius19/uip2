@@ -31,13 +31,14 @@ To build this project, we have used the platform Unity. We chose this platform f
 1. Open the project in Unity Hub
 
    *This project was developed using Unity 6.0.0 (6000.0.45f1) and Visual Studio Code.*
+
 2. Open the Scenes/Asteroidz.unity scene.
 
 3. Press the play button to begin game.
 
 ### Option 2: Game
 
-1. Run the Asteroidz.exe file located in the [] folder.
+1. Run the `Asteroidz - UIP 2 Game.exe` file located in the `../exe - WIN version` folder.
 
 ## Use of Chatbots
 We used chatbots to help understand C# code structures, refine / clean up our code, and check grammar.
