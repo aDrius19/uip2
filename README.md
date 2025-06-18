@@ -30,7 +30,7 @@ To build this project, we have used the platform Unity. We chose this platform f
 
 1. Open the project in Unity Hub
 
-   *This project was developed using Unity 6.0.0 (6000.0.45f1).*
+   *This project was developed using Unity 6.0.0 (6000.0.45f1) and Visual Studio Code.*
 2. Open the Scenes/Asteroidz.unity scene.
 
 3. Press the play button to begin game.
@@ -47,3 +47,6 @@ While we do not have the exact hours recorded, the group spent a specific amount
 
 ## Github Link
 [asteroidz-github-repo](https://github.com/aDrius19/uip2/tree/master)
+
+## License
+This project is for academic use only and not intended for commercial distribution.
